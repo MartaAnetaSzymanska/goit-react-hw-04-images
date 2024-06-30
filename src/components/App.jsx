@@ -68,7 +68,7 @@ export const App = () => {
   // ----------change page----------
 
   const handleButtonClick = () => {
-    setPage((prev) => ({ page: prev.page + 1 }));
+    setPage((prev) => prev + 1);
   };
 
   // ----------handle Modal---------
@@ -79,7 +79,7 @@ export const App = () => {
   };
 
   const handleCloseModal = () => {
-    setOpenModal((prev) => ({ openModal: !prev.openModal }));
+    setOpenModal(() => false);
   };
 
   return (
